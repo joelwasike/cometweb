@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="public, max-age=31536000">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="cometapp">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>cometapp</title>
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Preload critical resources -->
+  <link rel="preload" href="main.dart.js" as="script">
+  <link rel="preload" href="flutter.js" as="script">
+
+  <style>
+    body{margin:0;background:#fff}
+    #l{position:fixed;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;background:#fff;z-index:9999}
+    #s{width:50px;height:50px;border:3px solid #f3f3f3;border-top:3px solid #3498db;border-radius:50%;animation:r 1s linear infinite;will-change:transform}
+    #t{margin-top:20px;color:#666;font-family:Arial,sans-serif;font-size:14px}
+    @keyframes r{to{transform:rotate(360deg)}}
+  </style>
+</head>
+<body>
+  <div id="l">
+    <div id="s"></div>
+    <div id="t">Loading...</div>
+  </div>
+  <script>
+    (function(){
+      var l=document.getElementById('l');
+      function r(){
+        l.style.opacity='0';
+        l.style.transition='opacity .3s ease-out';
+        setTimeout(()=>l.remove(),300)
+      }
+      window.addEventListener('flutter-first-frame',r);
+      setTimeout(r,8000)
+    })();
+  </script>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
