@@ -56029,32 +56029,32 @@ s=1
 break
 case 1:return A.q(q,r)}})
 return A.r($async$BP,r)},
-yJ(){var s=0,r=A.t(t.H),q,p=2,o=[],n=this,m,l,k,j,i,h,g,f,e,d,c
+yJ(){var s=0,r=A.t(t.H),q,p=2,o=[],n=this,m,l,k,j,i,h,g,f,e,d
 var $async$yJ=A.u(function(a,b){if(a===1){o.push(b)
 s=p}while(true)switch(s){case 0:p=4
 m=t.C.a($.c6().bT("myBox",!1,t.z))
-l=J.hD(m,"phone")
-f=n.r
-if(f==null){A.a_("No token found. Please log in.")
+J.hD(m,"phone")
+g=n.r
+if(g==null){A.a_("No token found. Please log in.")
 s=1
-break}e=t.N
-k=A.Y(["Authorization","Bearer "+f],e,e)
-j=A.bq("http://crypto.mam-laka.com/public/usdc/user/"+A.e(l),0,null)
+break}f=t.N
+l=A.Y(["Authorization","Bearer "+g],f,f)
+k=A.bq("https://apitest.investpo.co/usdcbalance",0,null)
 s=7
-return A.v(A.lu(j,k),$async$yJ)
-case 7:i=b
-if(i.b===200){f=i
-h=B.u.cu(0,A.cd(A.cc(f.e).c.a.h(0,"charset")).aT(0,f.w),null)
-A.a_("balance"+A.e(h))
-n.F(new A.aKp(n,h))
-A.a_("balance is "+A.e(n.z))}else A.a_("Failed to fetch balance. HTTP "+i.b+": "+i.c)
+return A.v(A.lu(k,l),$async$yJ)
+case 7:j=b
+if(j.b===200){g=j
+i=B.u.cu(0,A.cd(A.cc(g.e).c.a.h(0,"charset")).aT(0,g.w),null)
+A.a_("balance"+A.e(i))
+n.F(new A.aKp(n,i))
+A.a_("balance is "+A.e(n.z))}else A.a_("Failed to fetch balance. HTTP "+j.b+": "+j.c)
 p=2
 s=6
 break
 case 4:p=3
-c=o.pop()
-g=A.a9(c)
-A.a_("Error fetching balance: "+A.e(g))
+d=o.pop()
+h=A.a9(d)
+A.a_("Error fetching balance: "+A.e(h))
 s=6
 break
 case 3:s=2
@@ -56134,7 +56134,7 @@ $0(){this.a.a=!0
 A.aO(this.b,!1).cj(!0)},
 $S:0}
 A.aKp.prototype={
-$0(){this.a.z=J.Z(J.Z(this.b,"user"),"balance")},
+$0(){this.a.z=J.Z(this.b,"balance")},
 $S:0}
 A.aKx.prototype={
 $0(){this.a.f=A.dQ(J.Z(this.b,"transactions"),!0,t.z)},
