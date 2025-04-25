@@ -55723,7 +55723,7 @@ var $async$By=A.u(function(a,b){if(a===1){p.push(b)
 s=q}while(true)switch(s){case 0:o.F(new A.aJ_(o))
 q=3
 s=6
-return A.v(A.kq(A.bn("http://giftcard.mam-laka.com/merchants",0,null),null),$async$By)
+return A.v(A.kq(A.bn("https://giftcard.mam-laka.com/merchants",0,null),null),$async$By)
 case 6:n=b
 if(n.b===200){j=n
 m=B.u.aT(0,A.c8(A.c7(j.e).c.a.h(0,"charset")).aT(0,j.w))
